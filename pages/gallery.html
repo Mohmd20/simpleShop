@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <span class="title">محصولات</span>
+    <div class="section-men flex">
+    <h1>مردانه</h1>
+    <div class="men-slider flex">
+        <div class="men-img men-slider1" ></div>
+        <div class="men-img men-slider2" ></div>
+        <div class="men-img men-slider3" ></div>
+        <div class="men-btn flex">
+            <button class="btn prev cursor" onclick="plusDivs(-1)">&#10094</button>
+        <button class="btn next cursor" onclick="plusDivs(+1)">&#10095</button>
+    </div></div>
+    </div>
+    <div class="section-women flex">
+    <h1>زنانه</h1>
+    <div class="women-slider flex">
+        <div class="women-img women-slider1" ></div>
+        <div class="women-img women-slider2" ></div>
+        <div class="women-img women-slider3" ></div>
+        <div class="men-btn flex">
+            <button class="btn prev cursor" onclick="plusDivsA(-1)">&#10094</button>
+        <button class="btn next cursor" onclick="plusDivsA(+1)">&#10095</button>
+    </div></div>
+    </div>
+    <script>
+        let slideIndex = 1;
+        showDivs(slideIndex);
+        showDivsA(slideIndex);
+
+        function plusDivs(n) {
+        showDivs(slideIndex += n);
+        }
+        function plusDivsA(n) {
+            showDivsA(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            let i;
+            let x = document.querySelectorAll(".men-img");
+            console.log(x);
+            if (n > x.length) {
+                slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none"  
+            }
+        x[slideIndex-1].style.display = "block"  
+        }
+        function showDivsA(n){
+            let i;
+            let x = document.querySelectorAll(".women-img");
+            console.log(x);
+            if (n > x.length) {
+                slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none"  
+            }
+        x[slideIndex-1].style.display = "block" 
+        }
+        
+    </script>
+</body>
+</html>

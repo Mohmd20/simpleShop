@@ -1,0 +1,426 @@
+:root {
+   --icon-size : 35px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ } 
+body{
+    background-color:white;
+    position: relative;
+    font-family: 'BYekan';
+    font-size: larger;
+}
+@font-face {
+    font-family: 'BYekan';
+    src: url('../font/BYekan.woff') format('woff');
+}
+@media only screen and (max-width: 500px){
+    .shoes-logo{
+        margin: 0 !important;
+        width: 10rem;
+        height: 10rem;
+        right: 0 !important;
+    }
+    .account{
+        display: flex !important;
+        justify-content: baseline !important;
+        flex-direction: column;
+        gap: 1rem !important;
+        height: 5rem !important;
+        margin: 0;
+    }
+    .pagetop{
+        align-items: center !important;
+    }
+    .header-top{
+        height: 50% !important;
+        gap: 1rem !important;
+    }
+    .header-bottom{
+        height: 50% !important;
+        flex-direction: column !important;
+        gap: 1rem !important;
+        justify-content: center !important;
+    }
+    .account-icons{
+        justify-content: center;
+    }
+    .product-list{
+        flex-direction: column;
+    }
+    .footer{
+        flex-direction: column;
+        gap: 0 !important;
+    }
+    .about-details{
+        gap: 0 !important;
+    }
+    .footer-left{
+        gap: 0 !important;
+        margin: 0 !important;
+        justify-content: flex-start !important;
+    }
+    .social{
+        align-items: baseline !important;
+        gap: 1em !important;
+        padding: 0 !important;
+    }
+    .login-section{
+        width: 50% !important;
+    }
+    .section-men,.section-women{
+        left: 10vw !important;
+        width: 20em !important;
+        height: 30em !important;
+    }
+    .men-btn{
+        width: 20em !important;
+        height: 30em !important;
+    }
+    .title{
+        left: 20vw !important;
+    }
+}
+
+
+
+
+
+
+
+
+a{
+     
+   text-decoration: none;
+   color: black; 
+}
+.pagetop{
+    box-shadow: 0px 0px 5px 1px rgb(83, 83, 83);
+    background-color:white;
+    height: 20rem;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+.shoes-logo{
+    margin-right: 7rem;
+}
+
+.header-top{
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.header-bottom{
+    overflow: hidden;
+    height: 30%;
+    width: 90%;
+    margin-right: 7rem;
+    justify-content: space-between;
+}
+.search-icon{
+   
+    text-decoration: none;
+    all: unset;
+    position: absolute;
+    left: 0;
+    padding: 5px;
+}
+.search-input{
+    z-index: 999;
+    border-radius: 4rem;
+    width: inherit;
+    height: 2rem;
+    padding-right: 10px;
+}
+.search-box{
+    width: 20rem;
+    height: 2rem;
+    
+    position: relative;
+}
+.account{
+    display: flex;
+    justify-content: space-between;
+    
+    gap: 5rem;
+    height: 100%;
+    margin-top: 4rem;
+    margin-left: 15%;
+}
+.signup-btn{
+    color: rgb(0, 0, 0);
+    background-color: #1e7fba;
+    text-align: center;
+    padding: 10px;
+    width: 135px;
+    height: 50px;
+    border-radius: 0.5rem;
+}
+.account-icons{
+    display: flex;
+    gap: 2rem;
+}
+.like{
+    background-image: url(../image/icons8-like-24.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    margin-top: 5px;
+}
+.card{
+    background-image: url(../image/icons8-purchase-24.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    margin-top: 5px;
+}
+.name-catagory{
+    list-style-type: none;
+    display: flex;
+    gap: 5rem;
+}
+.dropdown-arrow{
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.cursor{
+    cursor: pointer;
+}
+.container{
+    margin-top: 15rem;
+    display: block;
+    
+}
+.main-image{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;   
+    width: 100%;
+    height: 60rem;
+}
+.main-image img{
+    border-radius: 2rem;
+    margin-top: 10rem;
+    width: 90%;
+    height: 80%;
+}
+.catagory{
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    padding-bottom: 1em;
+    text-align: center;
+    width: 70%;
+    border-bottom: 0.2rem solid black;
+}
+.product-list{
+    display: flex;
+    gap : 5rem;
+    margin-top: 3rem;
+}
+.single-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 5px 1px rgb(83, 83, 83);
+    width: 20rem;
+    height: 20rem;
+}
+.single-product img{
+    width: 10rem;
+    height: 10rem;
+}
+
+
+
+
+
+
+
+
+/* signup */
+.bg-signup{
+    background-color: #f0f5ff !important;
+}
+.login-section{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 3px rgb(92, 92, 92);
+    position: fixed;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+}
+.input{
+    padding-right: 10px;
+    width: 80%;
+    height: 2.5rem;
+    outline: none;
+    appearance: none;
+    border-radius: 50px;
+    background-color:#f0f5ff;
+}
+.flex{
+    display: flex;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.input:focus{
+    box-shadow: 0px 0px 4px 2px rgb(92, 92, 92);
+}
+
+.submit-box{
+    align-items: baseline;
+    gap: 2rem;
+}
+.signin{
+    transition: all 0.5s ease-in-out;
+}
+.signin:hover{
+    color: rgb(255, 2, 2);
+}
+
+
+/* footer */
+.footer{
+    top: 100vh;
+    bottom: 0;
+    margin-top: 20rem;
+    background-color: #4f8aff;
+    width: 100%;
+    height: 20rem;
+    justify-content: center;
+    gap: 5rem;
+}
+.footer-details{
+    margin-top: 2rem;
+    padding: 2rem;
+    gap: 2rem;
+}
+.about-details{
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer-left{
+    float: left;
+    width: 30%;
+    margin-top: 3rem;
+    gap: 3rem;
+}
+.footer-left img{
+    width: 10rem;
+    height: 10rem;
+}
+.social{
+    padding-top: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+.social-icons{
+    top: 0;
+    gap: 1rem;
+}
+
+
+
+
+/* gallery */
+.section-men{
+    flex-direction: column;
+    width: 31.5em;
+    height: 31.5em;
+    position: absolute;
+    left: 50rem;
+    top: 50%;
+    margin-top: 20rem;
+    gap: 1rem;
+    justify-content: baseline;
+}
+.section-women{
+    flex-direction: column;
+    width: 31.5em;
+    height: 31.5em;
+    position: absolute;
+    left: 50rem;
+    top: 50%;
+    margin-top: 65rem;
+    gap: 1rem;
+    justify-content: baseline;
+}
+
+.men-btn{
+    top: 50%;
+    position: absolute;
+    width: 31.5em;
+    height: 31.5em;
+    justify-content: space-between;
+}
+.men-img,.women-img{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.men-slider1{
+    background-image: url(../image/Untitled.jpg);
+}
+.men-slider2{
+    background-image: url(../image/product-jpeg-500x500.webp);
+}
+.men-slider3{
+    background-image: url(../image/8-mrj2100-8-aadi-white-black-grey-original-imagn8yk5hfq7vnh.webp);
+}
+.btn{
+    border: none;
+    font-size: 1rem;
+    height: 3rem;
+    width: 2rem;
+    outline: none;
+    appearance: none;
+    background: rgb(255, 255, 255);
+    z-index: 99;
+}
+
+.women-slider1{
+    background-image: url(../image/31-168M11.webp);
+}
+.women-slider2{
+    background-image: url(../image/thumb---146A1793-1TuSU.jpg);
+}
+.women-slider3{
+    background-image: url(../image/SL-198-BMRD-1.jpg);
+}
+.title{
+    font-size: 5rem;
+    left: 50%;
+    position:absolute;
+}
+
